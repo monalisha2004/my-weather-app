@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container" role="main" aria-label="Weather app">
+    <div class="card">
+      <h1>Weather</h1>
+
+      <div class="controls">
+        <input id="city" type="text" placeholder="Enter city (e.g., Cuttack)" autocomplete="off" />
+        <button id="search">Search</button>
+      </div>
+
+      <div class="options">
+        <label class="toggle">
+          <input id="unitToggle" type="checkbox" />
+          <span id="unitLabel">°C</span>
+        </label>
+      </div>
+
+      <div id="result" class="result" aria-live="polite">
+        <div class="hint">Type a city and press Search</div>
+      </div>
+
+      <div id="error" class="error" role="alert" hidden></div>
+
+      <div class="footer">Demo uses OpenWeatherMap. Replace API key in script for production.</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
